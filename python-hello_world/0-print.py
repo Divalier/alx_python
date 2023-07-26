@@ -1,2 +1,2 @@
 a="\"Programming is like building a multilingual puzzle"
-print(a, end='')
+print(a)
