@@ -21,4 +21,4 @@ if __name__ == "__main__":
     result = add(a, b)
 
     # Print the formatted output
-    print(f"{a} + {b} = {result}")
+    print("{} + {} = {}".format(a,b,result))
