@@ -1,24 +1,23 @@
-# 0-add.py
+# main_program.py
 
+# Define the add function as a placeholder
 def add(a, b):
-    """My addition function
+    pass
 
-    Args:
-        a: first integer
-        b: second integer
+# Assign values to variables a and b
+a = 1
+b = 2
 
-    Returns:
-        The return value. a + b
-    """
-    return a + b
+# Import the add function from add_0.py
+exec(open('add_0.py').read())
 
-if __name__ == "__main__":
-    # Assign values to variables a and b
-    a = 1
-    b = 2
+# Calculate the result of the addition using the imported add function
+result = add(a, b)
 
-    # Calculate the result of the addition
-    result = add(a, b)
+# Print the formatted output
+print("{} + {} = {}".format(a,b,result))
 
-    # Print the formatted output
-    print("{} + {} = {}".format(a,b,result))
+
+
+
+
