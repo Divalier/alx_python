@@ -6,5 +6,5 @@ Prototype: def is_same_class(obj, a_class):
 You are not allowed to import any module
 """
 def is_same_class(obj, a_class):
-    "building a class that binds a self int"
+    "building a class that returns type of object to be class"
     return type(obj) is a_class

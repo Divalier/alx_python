@@ -8,7 +8,7 @@ You are not allowed to import any module
 
 
 class TypeMetaClass(type):
-    
+    "building a class that returns type of object to be class"
     def __dir__(cls) -> None:
         
         attributes = super().__dir__()
@@ -16,7 +16,7 @@ class TypeMetaClass(type):
         return [attribute for attribute in attributes if attribute != '__init_subclass__']
 
 class BaseGeometry(metaclass=TypeMetaClass):
-    
+    "building a class that returns type of object to be class"
     def area(self):
         
         raise Exception("area() is not implemented")
