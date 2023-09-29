@@ -1,48 +1,14 @@
+#!/usr/bin/python3
+'''
+Write a class Square that defines a square by:
+
+Private instance attribute: size
+Instantiation with size (no type/value verification)
+You are not allowed to import any module
+'''
 class Square:
-    """
-    This class represents a square.
-
-    Attributes:
-    __size (int): The size of the square.
-    """
-
+    "class Square is the blueprint to create a class and an object"
+    " Additionally self, isa keyword that binds the actual value with object"
+    "The self is used to initialize an object and is always called out everytme a new object is created"
     def __init__(self, size):
-        """
-        Initializes a new Square instance.
-
-        Args:
-        size (int): The size of the square.
-
-        Note:
-        The size is a private attribute.
-        """
         self.__size = size
-
-    def area(self):
-        """
-        Calculate the area of the square.
-
-        Returns:
-        int: The area of the square.
-        """
-        return self.__size * self.__size
-
-    def get_size(self):
-        """
-        Get the size of the square.
-
-        Returns:
-        int: The size of the square.
-        """
-        return self.__size
-
-    def set_size(self, size):
-        """
-        Set the size of the square.
-
-        Args:
-        size (int): The new size of the square.
-        """
-        self.__size = size
-
-#
