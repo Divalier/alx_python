@@ -45,7 +45,9 @@ class Rectangle(BaseGeometry):
         return f"[Rectangle] {self.__width}/{self.__height}"
 
 class Square(Rectangle):
-    
+    """
+    A geometry class.
+    """
 
     def __init__(self, size):
         
