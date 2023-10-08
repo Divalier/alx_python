@@ -3,17 +3,14 @@ import sys
 
 def get_user_id(username, password):
     """
-    Uses the GitHub API to get the ID of the specified user.
+   Write a Python script that takes your GitHub credentials (username and password) and uses the GitHub API to display your id
 
-    Authenticates with Basic Authentication using the specified username and password,
-    where the password is a personal access token with the read:user permission.
-
-    Args:
-        username (str): The GitHub username to use for authentication.
-        password (str): The personal access token to use as a password.
-
-    Returns:
-        str: The ID of the authenticated user.
+You must use Basic Authentication with a personal access token as password to access to your information (only read:user permission is needed)
+The first argument will be your username
+The second argument will be your password (in your case, a personal access token as password)
+You must use the package requests and sys
+You are not allowed to import packages other than requests and sys
+You don’t need to check arguments passed to the script (number or type)
     """
     url = 'https://api.github.com/user'
 

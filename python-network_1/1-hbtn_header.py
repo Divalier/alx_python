@@ -3,14 +3,12 @@ import sys
 
 def get_request_id(url):
     """
-    Sends a request to the specified URL and extracts the value of the X-Request-Id
-    header from the response.
+   Write a Python script that takes in a URL, sends a request to the URL and displays the value of the variable X-Request-Id in the response header
 
-    Args:
-        url (str): The URL to send the request to.
-
-    Returns:
-        str: The value of the X-Request-Id header, or None if it was not found.
+You must use the packages requests and sys
+You are not allow to import other packages than requests and sys
+The value of this variable is different for each request
+You don’t need to check script arguments (number and type
     """
     response = requests.get(url)
     request_id = response.headers.get('X-Request-Id')
